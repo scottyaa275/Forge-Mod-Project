@@ -39,9 +39,9 @@ public class MythicalAccessories {
     
     /**The Armor Texture for any demon armor pieces*/
     
-    public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "demonic", 25, new int[]{0,0,0,0}, 5);
+    public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "demonic", 25, new int[]{1,2,2,1}, 5);
     /**The Armor Texture for any angel armor pieces*/
-    public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "angelic", 25, new int[]{0,0,0,0}, 5);
+    public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "angelic", 25, new int[]{1,2,2,1}, 5);
     
     //Initialize everything
     @EventHandler
@@ -50,7 +50,7 @@ public class MythicalAccessories {
     	demonWings = new ItemWings(demonArmor, 0, 1).setUnlocalizedName("demon_wings");
     	GameRegistry.registerItem(demonWings, "demon_wings");
 
-    	angelWings = new ItemWings(angelArmor, 0, 1).setUnlocalizedName("wings_wings");
+    	angelWings = new ItemWings(angelArmor, 0, 1).setUnlocalizedName("angel_wings");
     	GameRegistry.registerItem(angelWings, "angel_wings");
     }
     

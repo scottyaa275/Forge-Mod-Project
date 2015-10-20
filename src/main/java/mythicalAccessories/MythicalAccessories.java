@@ -6,6 +6,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -35,11 +37,21 @@ public class MythicalAccessories {
     /**Dragon Wings*/
     public static Item dragonWings;
     
+    /**The Armor Texture for any demon armor pieces*/
+    
+    public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "demonic", 25, new int[]{0,0,0,0}, 5);
+    /**The Armor Texture for any angel armor pieces*/
+    public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "angelic", 25, new int[]{0,0,0,0}, 5);
+    
     //Initialize everything
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	demonWings = new ItemWings(null, 0, 1);
+    	demonWings = new ItemWings(demonArmor, 0, 1).setUnlocalizedName("demon_wings");
+    	GameRegistry.registerItem(demonWings, "demon_wings");
+
+    	angelWings = new ItemWings(angelArmor, 0, 1).setUnlocalizedName("wings_wings");
+    	GameRegistry.registerItem(angelWings, "angel_wings");
     }
     
     //Registry Fields are REQUIRED for block models to work in the inventory

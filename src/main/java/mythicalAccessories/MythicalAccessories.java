@@ -3,6 +3,7 @@ package mythicalAccessories;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -39,12 +40,12 @@ public class MythicalAccessories {
     public static Item dragonWings;
     
     /**The Armor material for any demon armor pieces*/
-    public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "demonic", 25, new int[]{1,2,2,1}, 5);
+    public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "mythicalAccessories:demonic", 25, new int[]{1,2,2,1}, 5);
     /**The Armor material for any angel armor pieces*/
-    public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "angelic", 25, new int[]{1,2,2,1}, 5);
+    public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "mythicalAccessories:angelic", 25, new int[]{1,2,2,1}, 5);
     
     /**The armor material for misc armor pieces*/
-    public static ArmorMaterial utilArmor = EnumHelper.addArmorMaterial("utilities", "util", 5, new int[]{1,0,0,0}, 8);
+    public static ArmorMaterial utilArmor = EnumHelper.addArmorMaterial("utilities", "mythicalAccessories:util", 5, new int[]{1,0,0,0}, 8);
     
     //Initialize everything
     @EventHandler
@@ -55,6 +56,11 @@ public class MythicalAccessories {
 
     	angelWings = new ItemWings(angelArmor, 0, 1).setUnlocalizedName("angel_wings");
     	GameRegistry.registerItem(angelWings, "angel_wings");
+    	
+    	flightGoggles = new ItemGoggles(utilArmor, 0, 0).setUnlocalizedName("flight_goggles");
+    	GameRegistry.registerItem(flightGoggles, "flight_goggles");
+    	ModelBakery.addVariantName(flightGoggles, "flight_goggles");
+    	//itemRenderRegister(flightGoggles, 0, "flight_goggles");
     }
     
     //Registry Fields are REQUIRED for block models to work in the inventory

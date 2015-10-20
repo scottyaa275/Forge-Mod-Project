@@ -18,7 +18,8 @@ public class MythicalAccessories {
 
 	public static final String NAME = "Kreacher Features";
 	public static final String MODID = "mythicalAccessories";
-    public static final String VERSION = "1.0.1";
+	//Edit mcmod.info instead
+    public static final String VERSION = "1.0.2";
     
     /**A generic Wing Item*/
     public static Item wings;
@@ -37,11 +38,13 @@ public class MythicalAccessories {
     /**Dragon Wings*/
     public static Item dragonWings;
     
-    /**The Armor Texture for any demon armor pieces*/
-    
+    /**The Armor material for any demon armor pieces*/
     public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "demonic", 25, new int[]{1,2,2,1}, 5);
-    /**The Armor Texture for any angel armor pieces*/
+    /**The Armor material for any angel armor pieces*/
     public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "angelic", 25, new int[]{1,2,2,1}, 5);
+    
+    /**The armor material for misc armor pieces*/
+    public static ArmorMaterial utilArmor = EnumHelper.addArmorMaterial("utilities", "util", 5, new int[]{1,0,0,0}, 8);
     
     //Initialize everything
     @EventHandler

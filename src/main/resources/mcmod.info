@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "mythicalAccessories",
+  "name": "Kreacher Features",
+  "description": "A Mod that aims to add various usefull (wearable) things to Minecraft",
+  "version": "1.0.2",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Scottyaa275, Danni_"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

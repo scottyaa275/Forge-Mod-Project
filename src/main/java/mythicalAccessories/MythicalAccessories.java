@@ -1,6 +1,7 @@
 package mythicalAccessories;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
@@ -19,16 +20,24 @@ public class MythicalAccessories {
 	public static final String MODID = "MythicalAccessories";
     public static final String VERSION = "1.0.1";
 	
+    /**A test Item that will be removed*/
     public static Item testItem;
+    /**A test Block that will be removed*/
     public static Block testBlock;
     
     //Initialize everything
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+    	//These will be removed
+        testItem = new Item().setUnlocalizedName("test_item");
+        GameRegistry.registerItem(testItem, "testItem");
         
+        testBlock = new Block(Material.rock).setUnlocalizedName("test_block");
+        GameRegistry.registerBlock(testBlock, "testBlock");
     }
     
+    //Registry Fields are REQUIRED for block models to work in the inventory
 	/**Registry for Item models in inventory*/
 	public void itemRenderRegister(Item item, int meta, String itemName)
 	{

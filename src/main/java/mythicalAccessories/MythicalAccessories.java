@@ -1,11 +1,14 @@
 package mythicalAccessories;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.example.examplemod.ExampleMod;
 
@@ -25,4 +28,19 @@ public class MythicalAccessories {
     {
         
     }
+    
+	/**Registry for Item models in inventory*/
+	public void itemRenderRegister(Item item, int meta, String itemName)
+	{
+		ModelResourceLocation itemModelRecourceLocation = new ModelResourceLocation(MODID +":" + itemName, "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, itemModelRecourceLocation);
+	}
+
+	/**Registry for Block models in inventory*/
+	public void blockRenderRegister(Block block, int meta, String blockName)
+	{
+		Item itemFromBlock = GameRegistry.findItem(MODID, blockName);
+		ModelResourceLocation itemFromBlockModelRecourceLocation = new ModelResourceLocation(MODID +":" + blockName, "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemFromBlock, meta, itemFromBlockModelRecourceLocation);
+	}
 }

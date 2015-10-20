@@ -15,24 +15,31 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MythicalAccessories {
 
 	public static final String NAME = "Kreacher Features";
-	public static final String MODID = "MythicalAccessories";
+	public static final String MODID = "mythicalAccessories";
     public static final String VERSION = "1.0.1";
-	
-    /**A test Item that will be removed*/
-    public static Item testItem;
-    /**A test Block that will be removed*/
-    public static Block testBlock;
+    
+    /**A generic Wing Item*/
+    public static Item wings;
+    /**A generic scarf Item*/
+    public static Item scarf;
+    
+    /**Flight Googles*/
+    public static Item flightGoggles;
+    
+    //Wings allow you to fly, You need flight goggles or your vision will become blurry 
+    
+    /**Demonic Wings*/
+    public static Item demonWings;
+    /**Angelic Wings*/
+    public static Item angelWings;
+    /**Dragon Wings*/
+    public static Item dragonWings;
     
     //Initialize everything
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	//These will be removed
-        testItem = new Item().setUnlocalizedName("test_item");
-        GameRegistry.registerItem(testItem, "testItem");
-        
-        testBlock = new Block(Material.rock).setUnlocalizedName("test_block");
-        GameRegistry.registerBlock(testBlock, "testBlock");
+    	demonWings = new ItemWings(null, 0, 1);
     }
     
     //Registry Fields are REQUIRED for block models to work in the inventory

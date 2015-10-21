@@ -39,6 +39,9 @@ public class MythicalAccessories {
     /**Ties not as cool as bow ties but whatever*/
     public static Item ties;
     
+    /**Ear muffs :D (Thanks dad :3)*/
+    public static Item earMuffs;
+    
     //Wings allow you to fly, You need flight goggles or your vision will become blurry 
     //Make sure goggles dont look like googles of reaveling in thaumcraft PLEAAAASSSEEE
     //Angelic wings should show skin, then skin/feathers then wings

@@ -58,7 +58,7 @@ public class MythicalAccessories {
     
     /**The armor material for misc armor pieces*/
     public static ArmorMaterial utilArmor = EnumHelper.addArmorMaterial("utilities", "mythicalAccessories:util", 5, new int[]{1,0,0,0}, 8);
-    
+    //You CANT have halo and horns at same time...same goes with angel and dragon helm and horns/dragon helm
     //Initialize everything
     @EventHandler
     public void init(FMLInitializationEvent event)

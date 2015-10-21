@@ -91,6 +91,10 @@ public class MythicalAccessories {
     	GameRegistry.registerItem(angelWings, "angel_wings");
     	itemRenderRegister(angelWings, 0, "angel_wings");
     	
+    	angelHalo = new Item().setUnlocalizedName("angel_halo");
+    	GameRegistry.registerItem(angelHalo, "angel_halo");
+    	itemRenderRegister(angelHalo, 0, "angel_halo");
+    	
     	flightGoggles = new ItemGoggles(utilArmor, 0, 0).setUnlocalizedName("flight_goggles");
     	GameRegistry.registerItem(flightGoggles, "flight_goggles");
     	itemRenderRegister(flightGoggles, 0, "flight_goggles");

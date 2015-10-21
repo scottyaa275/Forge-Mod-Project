@@ -52,6 +52,13 @@ public class MythicalAccessories {
     /**Dragon Helm */
     public static Item dragonHelm;
     
+    /**Demonic Claws*/
+    public static Item demonicClaws;
+    /**Dragon Claws*/
+    public static Item dragonClaws;
+    /**Angelic Hands*/
+    public static Item angelicHands;
+    
     //Gender should affect demon type ex: females looks like succubuses and males look like....Idk male demons???
     //Also dragons should not be as big and ender dragon but smaller
     //Make demons nether angels appear only on full moons at night and dragons in caves with a random chance of spawning

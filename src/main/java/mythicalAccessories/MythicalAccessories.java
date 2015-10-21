@@ -46,7 +46,9 @@ public class MythicalAccessories {
     public static Item dragonWings;
     
     //This is a test
-    
+    //Gender should affect demon type ex: females looks like succubuses and males look like....Idk male demons???
+    //Also dragons should not be as big and ender dragon but smaller
+    //Make demons nether angels appear only on full moons at night and dragons in caves with a random chance of spawning
     /**The Armor material for any demon armor pieces*/
     public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "mythicalAccessories:demonic", 25, new int[]{1,2,2,1}, 5);
     /**The Armor material for any angel armor pieces*/

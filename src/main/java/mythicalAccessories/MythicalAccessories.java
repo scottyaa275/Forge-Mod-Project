@@ -29,6 +29,11 @@ public class MythicalAccessories {
     
     /**A generic scarf Item*/
     public static Item scarf;
+    /**Demon Horns /
+     * 
+     */
+      public static Item DemonHorns;
+     
     
     /**Flight Googles*/
     public static Item flightGoggles;

@@ -7,6 +7,7 @@ import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -91,7 +92,7 @@ public class MythicalAccessories {
     	GameRegistry.registerItem(angelWings, "angel_wings");
     	itemRenderRegister(angelWings, 0, "angel_wings");
     	
-    	angelHalo = new Item().setUnlocalizedName("angel_halo");
+    	angelHalo = new ItemArmor(angelArmor, 0, 0).setUnlocalizedName("angel_halo");
     	GameRegistry.registerItem(angelHalo, "angel_halo");
     	itemRenderRegister(angelHalo, 0, "angel_halo");
     	

@@ -21,6 +21,7 @@ public class MythicalAccessories {
 	public static final String MODID = "mythicalAccessories";
 	//Edit mcmod.info instead
     public static final String VERSION = "1.0.2";
+    
     //For scarves use dyes to make it customizable I would suggest max amount of dyes is 4
     //You add dyes in order of colors you want
     /**A generic Wing Item*/
@@ -33,14 +34,10 @@ public class MythicalAccessories {
     public static Item flightGoggles;
     
     //Wings allow you to fly, You need flight goggles or your vision will become blurry 
-<<<<<<< HEAD
-    
-    
-=======
     //Make sure goggles dont look like googles of reaveling in thaumcraft PLEAAAASSSEEE
     //Angelic wings should show skin, then skin/feathers then wings
     //Same applies for dragon wings subistute feathers w/ scales
->>>>>>> origin/master
+    
     /**Demonic Wings*/
     public static Item demonWings;
     /**Angelic Wings*/

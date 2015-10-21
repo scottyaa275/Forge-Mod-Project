@@ -47,7 +47,12 @@ public class MythicalAccessories {
     //Make sure goggles dont look like googles of reaveling in thaumcraft PLEAAAASSSEEE
     //Angelic wings should show skin, then skin/feathers then wings
     //Same applies for dragon wings subistute feathers w/ scales
-    
+    //Angels are going to be passive mobs 
+    //Demons are hostile so they attack once they see you
+    //Dragons are passive so when YOU attack they attack back
+    //Angels come out only on full moons in minecraft
+    //Dragons have a rare chance of spawning in the skies
+    //Demons in nether and rare as well all of them rare acutally
     /**Demonic Wings*/
     public static Item demonWings;
     /**Angelic Wings*/

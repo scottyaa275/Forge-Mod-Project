@@ -53,14 +53,15 @@ public class MythicalAccessories {
     {
     	demonWings = new ItemWings(demonArmor, 0, 1).setUnlocalizedName("demon_wings");
     	GameRegistry.registerItem(demonWings, "demon_wings");
+    	itemRenderRegister(demonWings, 0, "demon_wings");
 
     	angelWings = new ItemWings(angelArmor, 0, 1).setUnlocalizedName("angel_wings");
     	GameRegistry.registerItem(angelWings, "angel_wings");
+    	itemRenderRegister(angelWings, 0, "angel_wings");
     	
     	flightGoggles = new ItemGoggles(utilArmor, 0, 0).setUnlocalizedName("flight_goggles");
     	GameRegistry.registerItem(flightGoggles, "flight_goggles");
-    	ModelBakery.addVariantName(flightGoggles, "flight_goggles");
-    	//itemRenderRegister(flightGoggles, 0, "flight_goggles");
+    	itemRenderRegister(flightGoggles, 0, "flight_goggles");
     }
     
     //Registry Fields are REQUIRED for block models to work in the inventory

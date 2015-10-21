@@ -47,6 +47,8 @@ public class MythicalAccessories {
     
     /**Demon Horns*/
     public static Item demonHorns;
+    /**Angel Halo*/
+    public static Item angelHalo;
     
     //Gender should affect demon type ex: females looks like succubuses and males look like....Idk male demons???
     //Also dragons should not be as big and ender dragon but smaller

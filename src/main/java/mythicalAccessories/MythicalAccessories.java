@@ -39,6 +39,8 @@ public class MythicalAccessories {
     /**Dragon Wings*/
     public static Item dragonWings;
     
+    //This is a test
+    
     /**The Armor material for any demon armor pieces*/
     public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "mythicalAccessories:demonic", 25, new int[]{1,2,2,1}, 5);
     /**The Armor material for any angel armor pieces*/

@@ -20,3 +20,13 @@ build
 # other
 eclipse
 run
+
+*.jar
+build.gradle
+gradlew
+*.bat
+LICENSE-fml.txt
+Paulscode IBXM Library License.txt
+README.txt
+MinecraftForge-Credits.txt
+forge-1.8-11.14.3.1521-changelog.txt

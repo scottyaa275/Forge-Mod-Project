@@ -29,11 +29,6 @@ public class MythicalAccessories {
     
     /**A generic scarf Item*/
     public static Item scarf;
-    /**Demon Horns /
-     * 
-     */
-      public static Item DemonHorns;
-     
     
     /**Flight Googles*/
     public static Item flightGoggles;
@@ -50,7 +45,9 @@ public class MythicalAccessories {
     /**Dragon Wings*/
     public static Item dragonWings;
     
-    //This is a test
+    /**Demon Horns*/
+    public static Item demonHorns;
+    
     //Gender should affect demon type ex: females looks like succubuses and males look like....Idk male demons???
     //Also dragons should not be as big and ender dragon but smaller
     //Make demons nether angels appear only on full moons at night and dragons in caves with a random chance of spawning

@@ -24,6 +24,7 @@ public class MythicalAccessories {
     
     /**A generic Wing Item*/
     public static Item wings;
+    
     /**A generic scarf Item*/
     public static Item scarf;
     
@@ -31,6 +32,7 @@ public class MythicalAccessories {
     public static Item flightGoggles;
     
     //Wings allow you to fly, You need flight goggles or your vision will become blurry 
+    
     
     /**Demonic Wings*/
     public static Item demonWings;

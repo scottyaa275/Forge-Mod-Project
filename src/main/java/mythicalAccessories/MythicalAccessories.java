@@ -33,6 +33,12 @@ public class MythicalAccessories {
     /**Flight Googles*/
     public static Item flightGoggles;
     
+    /** Bow ties (cause they're cool)*/
+    public static Item bowTies;
+    
+    /**Ties not as cool as bow ties but whatever*/
+    public static Item ties;
+    
     //Wings allow you to fly, You need flight goggles or your vision will become blurry 
     //Make sure goggles dont look like googles of reaveling in thaumcraft PLEAAAASSSEEE
     //Angelic wings should show skin, then skin/feathers then wings

@@ -21,10 +21,11 @@ public class MythicalAccessories {
 	public static final String NAME = "Kreacher Features";
 	public static final String MODID = "mythicalAccessories";
 	//Edit mcmod.info instead
-    public static final String VERSION = "1.0.2";
+    public static final String VERSION = "1.0.3";
     
     //For scarves use dyes to make it customizable I would suggest max amount of dyes is 4
     //You add dyes in order of colors you want
+    //Or A GUI Can be used 
     /**A generic Wing Item*/
     public static Item wings;
     
@@ -40,7 +41,7 @@ public class MythicalAccessories {
     /**Ties not as cool as bow ties but whatever*/
     public static Item ties;
     
-    /**Ear muffs :D (Thanks dad :3)*/
+    /**Ear muffs :D (Thanks dad :3) (Danni)*/
     public static Item earMuffs;
     
     //Wings allow you to fly, You need flight goggles or your vision will become blurry 

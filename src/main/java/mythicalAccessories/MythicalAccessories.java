@@ -66,7 +66,8 @@ public class MythicalAccessories {
     public static Item angelHalo;
     /**Dragon Helm */
     public static Item dragonHelm;
-    
+    //Angelic hands right click on a mob or player you heal them 5 hearts
+    //Angelic hands left click you push them away with a strong wind force
     /**Demonic Claws*/
     public static Item demonicClaws;
     /**Dragon Claws*/

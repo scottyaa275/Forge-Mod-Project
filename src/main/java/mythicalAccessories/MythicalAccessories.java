@@ -77,6 +77,10 @@ public class MythicalAccessories {
 	public static Item dragonHelm;
 	//Angelic hands right click on a mob or player you heal them 5 hearts
 	//Angelic hands left click you push them away with a strong wind force
+	//Demon rigth click activates a shadowy attack flame thing
+	//demon leftclick deals more damage
+	//Dragon rightclick shoots fire balls out of hands
+	//Dragon leftclick deals more damage and makes you dig faster
 	/**Demonic Claws*/
 	public static Item demonClaws;
 	/**Dragon Claws*/

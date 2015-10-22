@@ -96,7 +96,8 @@ public class MythicalAccessories {
 	public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "mythicalAccessories:demonic", 25, new int[]{1,2,2,1}, 5);
 	/**The Armor material for any angel armor pieces*/
 	public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "mythicalAccessories:angelic", 25, new int[]{1,2,2,1}, 5);
-
+/**The armor material for any DRAGOOON armor piece*/
+	public static ArmorMaterial dragonArmor=EnumHelper.addArmorMaterial("dragonArmor", "mythicalAccessories:draconic", 25, new int[] {1,2,2,1},5);
 	/**The armor material for misc armor pieces*/
 	public static ArmorMaterial utilArmor = EnumHelper.addArmorMaterial("utilities", "mythicalAccessories:util", 5, new int[]{1,0,0,0}, 8);
 	//You CANT have halo and horns at same time...same goes with angel and dragon helm and horns/dragon helm
@@ -125,6 +126,10 @@ public class MythicalAccessories {
 		flightGoggles = new ItemGoggles(utilArmor, 0, 0).setUnlocalizedName("flight_goggles");
 		GameRegistry.registerItem(flightGoggles, "flight_goggles");
 		itemRenderRegister(flightGoggles, 0, "flight_goggles");
+		
+		dragonWings=new ItemGoggles(dragonArmor, 0, 0).setUnlocalizedName("dragon_wings");
+		GameRegistry.registerItem(dragonWings,"dragon_wings");
+		itemRenderRegister(dragonWings, 0, "dragon_wings");
 	}
 
 	//Registry Fields are REQUIRED for block models to work in the inventory

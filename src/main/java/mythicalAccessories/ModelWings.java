@@ -14,21 +14,23 @@ import net.minecraft.entity.Entity;
 public class ModelWings extends ModelBiped 
 {
 	//fields
-	ModelRenderer winglefttop0;
+	/*ModelRenderer winglefttop0;
 	ModelRenderer wingleftwing0;
 	ModelRenderer wingrighttop0;
 	ModelRenderer wingrightwing0;
 	ModelRenderer winglefttop1;
 	ModelRenderer wingleftwing1;
 	ModelRenderer wingrighttop1;
-	ModelRenderer wingrightwing1;
+	ModelRenderer wingrightwing1;*/
+	ModelRenderer wingLeft;
+	ModelRenderer wingRight;
 
 	public ModelWings(float scale)
 	{
-		super(scale, 0, 64, 32);
+		super(scale, 0, 64, 64);
 		textureWidth = 64;
-		textureHeight = 32;
-		
+		textureHeight = 64;
+		/*
 		winglefttop0 = new ModelRenderer(this, 32, 0);
 		winglefttop0.addBox(1F, 0F, 2F, 6, 1, 1);
 		winglefttop0.setRotationPoint(0F, 0F, 0F);
@@ -77,31 +79,46 @@ public class ModelWings extends ModelBiped
 		wingrightwing1.setTextureSize(64, 32);
 		wingrightwing1.mirror = true;
 		setRotation(wingrightwing1, 0.0349066F, 0.2617994F, 0.1832596F);
+
+		this.bipedBody.addChild(winglefttop0);
+		this.bipedBody.addChild(wingleftwing0);
+		this.bipedBody.addChild(wingrighttop0);
+		this.bipedBody.addChild(wingrightwing0);
+		this.bipedBody.addChild(winglefttop1);
+		this.bipedBody.addChild(wingleftwing1);
+		this.bipedBody.addChild(wingrighttop1);
+		this.bipedBody.addChild(wingrightwing1);*/
+		wingLeft = new ModelRenderer(this, 0, 32);
+		wingLeft.addBox(0F, 1F, 2F, 8, 16, 1);
+		wingLeft.setRotationPoint(0F, 0F, 0F);
+		wingLeft.setTextureSize(64, 64);
+		wingLeft.mirror = true;
+		setRotation(wingLeft, 0F, 0F, -0.1745329F);
+		wingRight = new ModelRenderer(this, 18, 32);
+		wingRight.addBox(-8F, 1F, 2F, 8, 16, 1);
+		wingRight.setRotationPoint(0F, 0F, 0F);
+		wingRight.setTextureSize(64, 64);
+		wingRight.mirror = true;
+		setRotation(wingRight, 0F, 0F, 0.1745329F);
 		
-		this.bipedHead.addChild(winglefttop0);
-		this.bipedHead.addChild(wingleftwing0);
-		this.bipedHead.addChild(wingrighttop0);
-		this.bipedHead.addChild(wingrightwing0);
-		this.bipedHead.addChild(winglefttop1);
-		this.bipedHead.addChild(wingleftwing1);
-		this.bipedHead.addChild(wingrighttop1);
-		this.bipedHead.addChild(wingrightwing1);
+		this.bipedBody.addChild(wingLeft);
+		this.bipedBody.addChild(wingRight);
 	}
 
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
 	{
 		super.render(entity, f, f1, f2, f3, f4, f5);
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-		winglefttop0.render(f5);
+		/*winglefttop0.render(f5);
 		wingleftwing0.render(f5);
 		wingrighttop0.render(f5);
 		wingrightwing0.render(f5);
 		winglefttop1.render(f5);
 		wingleftwing1.render(f5);
 		wingrighttop1.render(f5);
-		wingrightwing1.render(f5);
+		wingrightwing1.render(f5);*/
 	}
-	
+
 	/*public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) 
 	{ 
 		super.render(entity, f, f1, f2, f3, f4, f5); 

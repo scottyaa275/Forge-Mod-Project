@@ -132,7 +132,7 @@ public class MythicalAccessories {
 		GameRegistry.registerItem(flightGoggles, "flight_goggles");
 		itemRenderRegister(flightGoggles, 0, "flight_goggles");
 		
-		dragonWings = new ItemWings(dragonArmor, 0, 1).setUnlocalizedName("dragon_wings").setMaxDamage(15000);
+		dragonWings = new ItemWings(dragonArmor, 0, 1).setUnlocalizedName("dragon_wings");
 		GameRegistry.registerItem(dragonWings,"dragon_wings");
 		itemRenderRegister(dragonWings, 0, "dragon_wings");
 		

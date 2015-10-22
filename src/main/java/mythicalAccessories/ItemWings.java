@@ -13,7 +13,7 @@ public class ItemWings extends ItemArmor {
 
 	public ItemWings(ArmorMaterial material, int renderIndex, int armorType) {
 		super(material, renderIndex, armorType);
-
+		this.setMaxDamage(15000);
 	}
 
 	ModelBiped armorModel = new ModelBiped();

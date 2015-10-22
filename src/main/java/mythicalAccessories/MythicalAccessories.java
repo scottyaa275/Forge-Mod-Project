@@ -72,9 +72,9 @@ public class MythicalAccessories {
 	public static Item demonHorns;
 	/**Angel Halo*/
 	public static Item angelHalo;
-	//Come up with a better name for this <--
-	/**Dragon Helm */
-	public static Item dragonHelm;
+	//Fixed the name for you I:
+	/**Dragon Crown */
+	public static Item dragonCrown;
 	//Angelic hands right click on a mob or player you heal them 5 hearts
 	//Angelic hands left click you push them away with a strong wind force
 	//Demon rigth click activates a shadowy attack flame thing

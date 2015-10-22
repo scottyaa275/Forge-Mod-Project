@@ -131,19 +131,19 @@ public class MythicalAccessories {
 		GameRegistry.registerItem(dragonWings,"dragon_wings");
 		itemRenderRegister(dragonWings, 0, "dragon_wings");
 		
-		dragonClaws=new Item().setUnlocalizedName("dragon_claws");
+		dragonClaws = new Item().setUnlocalizedName("dragon_claws");
 		GameRegistry.registerItem(dragonClaws, "dragon_claws");
 		itemRenderRegister(dragonClaws, 0, "dragon_claws");
 		
-		demonClaws=new Item().setUnlocalizedName("demon_claws");
+		demonClaws = new Item().setUnlocalizedName("demon_claws");
 		GameRegistry.registerItem(demonClaws, "demon_claws");
 		itemRenderRegister(demonClaws, 0, "demon_claws");
 		
-		demonHorns=new ItemArmor(demonArmor, 0, 0).setUnlocalizedName("demon_horns");
+		demonHorns = new ItemArmor(demonArmor, 0, 0).setUnlocalizedName("demon_horns");
 		GameRegistry.registerItem(demonHorns, "demon_horns");
 		itemRenderRegister(demonHorns, 0, "demon_horns");
 		
-		dragonCrown=new ItemArmor(dragonArmor, 0, 0).setUnlocalizedName("dragon_crown");
+		dragonCrown = new ItemArmor(dragonArmor, 0, 0).setUnlocalizedName("dragon_crown");
 		GameRegistry.registerItem(dragonCrown, "dragon_crown");
 		itemRenderRegister(dragonCrown, 0, "dragon_crown");
 		

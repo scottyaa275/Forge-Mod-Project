@@ -25,7 +25,7 @@ public class ModelWings extends ModelBiped
 
 	public ModelWings(float scale)
 	{
-		super(scale);
+		super(scale, 0, 64, 32);
 		textureWidth = 64;
 		textureHeight = 32;
 		
@@ -101,6 +101,12 @@ public class ModelWings extends ModelBiped
 		wingrighttop1.render(f5);
 		wingrightwing1.render(f5);
 	}
+	
+	/*public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) 
+	{ 
+		super.render(entity, f, f1, f2, f3, f4, f5); 
+		setRotationAngles(f, f1, f2, f3, f4, f5, entity); 
+	}*/
 
 	private void setRotation(ModelRenderer model, float x, float y, float z)
 	{

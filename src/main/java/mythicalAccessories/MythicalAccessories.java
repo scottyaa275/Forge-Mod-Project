@@ -16,6 +16,7 @@ import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -23,6 +24,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = MythicalAccessories.MODID, version = MythicalAccessories.VERSION, name = MythicalAccessories.NAME)
 public class MythicalAccessories {
+	
+	@SidedProxy(serverSide="mythicalAccessories.CommonProxy", clientSide="mythicalAccessories.ClientProxy")
+	public static CommonProxy proxy;
+	
 
 	public static final String NAME = "Kreacher Features";
 	public static final String MODID = "mythicalAccessories";

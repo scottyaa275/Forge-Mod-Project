@@ -11,16 +11,23 @@ public class PlayerHandler {
 	//POWWWAAARRRRR
 	//I HAVE POWER!!!!!!!!
 	//NOW ANY MOD CAN BE MADE >:D
-	
+
 	@SubscribeEvent(priority=EventPriority.HIGHEST, receiveCanceled=true)
 	public void onEvent(LivingJumpEvent event)
 	{
-		// DEBUG
 		if (event.entity instanceof EntityPlayer)
 		{
-			if(event.entityLiving.getHeldItem().getItem() == MythicalAccessories.angelHands)
+			EntityPlayer player = (EntityPlayer) event.entityLiving;
+			if(player.getCurrentArmor(2) != null)
 			{
-				event.entityLiving.addVelocity(0.0d, 0.5d, 0.0d);
+				if(player.getCurrentArmor(2).getItem() == MythicalAccessories.angelWings)
+				{
+					player.capabilities.allowFlying = true;
+				}
+			}
+			else
+			{
+				player.capabilities.allowFlying = false;
 			}
 		}
 	}

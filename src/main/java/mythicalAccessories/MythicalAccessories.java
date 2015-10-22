@@ -96,8 +96,8 @@ public class MythicalAccessories {
 	public static ArmorMaterial demonArmor = EnumHelper.addArmorMaterial("demonArmor", "mythicalAccessories:demonic", 25, new int[]{1,2,2,1}, 5);
 	/**The Armor material for any angel armor pieces*/
 	public static ArmorMaterial angelArmor = EnumHelper.addArmorMaterial("angelArmor", "mythicalAccessories:angelic", 25, new int[]{1,2,2,1}, 5);
-/**The armor material for any DRAGOOON armor piece*/
-	public static ArmorMaterial dragonArmor=EnumHelper.addArmorMaterial("dragonArmor", "mythicalAccessories:draconic", 25, new int[] {1,2,2,1},5);
+	/**The armor material for any DRAGOOON armor piece*/
+	public static ArmorMaterial dragonArmor = EnumHelper.addArmorMaterial("dragonArmor", "mythicalAccessories:draconic", 25, new int[] {1,2,2,1},5);
 	/**The armor material for misc armor pieces*/
 	public static ArmorMaterial utilArmor = EnumHelper.addArmorMaterial("utilities", "mythicalAccessories:util", 5, new int[]{1,0,0,0}, 8);
 	//You CANT have halo and horns at same time...same goes with angel and dragon helm and horns/dragon helm
@@ -106,7 +106,7 @@ public class MythicalAccessories {
 	public void init(FMLInitializationEvent event)
 	{
 		registerEventListeners();
-		
+
 		demonWings = new ItemWings(demonArmor, 0, 1).setUnlocalizedName("demon_wings");
 		GameRegistry.registerItem(demonWings, "demon_wings");
 		itemRenderRegister(demonWings, 0, "demon_wings");
@@ -122,12 +122,17 @@ public class MythicalAccessories {
 		angelHands = new Item().setUnlocalizedName("angel_hands");
 		GameRegistry.registerItem(angelHands, "angel_hands");
 		itemRenderRegister(angelHands, 0, "angel_hands");
-		
+
 		flightGoggles = new ItemGoggles(utilArmor, 0, 0).setUnlocalizedName("flight_goggles");
 		GameRegistry.registerItem(flightGoggles, "flight_goggles");
 		itemRenderRegister(flightGoggles, 0, "flight_goggles");
+<<<<<<< HEAD
 		
 		dragonWings=new ItemWings(dragonArmor, 0, 1).setUnlocalizedName("dragon_wings");
+=======
+
+		dragonWings = new ItemWings(dragonArmor, 0, 1).setUnlocalizedName("dragon_wings").setMaxDamage(15000);
+>>>>>>> origin/master
 		GameRegistry.registerItem(dragonWings,"dragon_wings");
 		itemRenderRegister(dragonWings, 0, "dragon_wings");
 		

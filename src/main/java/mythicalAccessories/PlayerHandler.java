@@ -20,7 +20,7 @@ public class PlayerHandler {
 	{
 		if (event.entity instanceof EntityPlayer)
 		{
-			EntityPlayer player = (EntityPlayer) event.entityLiving;
+			EntityPlayer player = (EntityPlayer) event.entity;
 			
 		}
 	}

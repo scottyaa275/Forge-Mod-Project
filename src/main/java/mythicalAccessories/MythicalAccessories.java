@@ -21,7 +21,7 @@ public class MythicalAccessories {
 	public static final String NAME = "Kreacher Features";
 	public static final String MODID = "mythicalAccessories";
 	//Edit mcmod.info instead
-    public static final String VERSION = "1.0.3";
+    public static final String VERSION = "1.0.31";
     
     //For scarves use dyes to make it customizable I would suggest max amount of dyes is 4
     //You add dyes in order of colors you want
@@ -65,6 +65,7 @@ public class MythicalAccessories {
     public static Item demonHorns;
     /**Angel Halo*/
     public static Item angelHalo;
+    //Come up with a better name for this <--
     /**Dragon Helm */
     public static Item dragonHelm;
     //Angelic hands right click on a mob or player you heal them 5 hearts

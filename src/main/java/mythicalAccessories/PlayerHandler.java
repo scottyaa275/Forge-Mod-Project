@@ -59,7 +59,7 @@ public class PlayerHandler {
 				}
 			}
 		}
-		else
+		else if(!player.capabilities.isCreativeMode)
 		{
 			player.capabilities.allowFlying = false;
 			player.capabilities.isFlying = false;

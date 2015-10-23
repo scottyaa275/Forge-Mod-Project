@@ -1,4 +1,4 @@
-package mythicalAccessories;
+package mythicalAccessories.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;

@@ -1,5 +1,6 @@
 package mythicalAccessories;
 
+import mythicalAccessories.item.ItemWings;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.player.EntityPlayer;

@@ -1,9 +1,9 @@
 [
 {
-  "modid": "mythicalAccessories",
-  "name": "Kreacher Features",
-  "description": "A Mod that aims to add various usefull (wearable) things to Minecraft",
-  "version": "1.0.840",
+  "modid": "newWorlds",
+  "name": "The World A New",
+  "description": "The World is replaced with A NEW One",
+  "version": "1.0.001",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

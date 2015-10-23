@@ -1,5 +1,6 @@
-package mythicalAccessories;
+package mythicalAccessories.item;
 
+import mythicalAccessories.MythicalAccessories;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;

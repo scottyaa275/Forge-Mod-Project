@@ -1,5 +1,7 @@
 package mythicalAccessories;
 
+import mythicalAccessories.item.ItemGoggles;
+import mythicalAccessories.item.ItemWings;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;

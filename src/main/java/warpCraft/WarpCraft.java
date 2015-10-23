@@ -1,7 +1,6 @@
-package newWorlds;
+package warpCraft;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockGrass;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -9,29 +8,18 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import newWorlds.BlockBetterGrass;
 
-@Mod(modid = NewWorlds.MODID, version = NewWorlds.VERSION, name = NewWorlds.NAME)
-public class NewWorlds {
-	
-	//That is the name btw :3
-	//I really hope we can make another mod file i DO NOT  want to go through that again ;~;
-	//The World A New
-	
-	public static final String NAME = "The World A New";
-	public static final String MODID = "newWorlds";
+@Mod(modid = WarpCraft.MODID, version = WarpCraft.VERSION, name = WarpCraft.NAME)
+public class WarpCraft {
+
+	public static final String NAME = "Warpcraft";
+	public static final String MODID = "warpCraft";
 	public static final String VERSION = "1.8";
-	
-	public static Block leaves;
-	public static Block log;
-	
-	public static Block betterGrass;
-	
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-		betterGrass = new BlockBetterGrass().setHardness(1.0f).setUnlocalizedName("better_grass");
-		GameRegistry.registerBlock(betterGrass, "better_grass");
 		
 	}
 	
@@ -50,4 +38,5 @@ public class NewWorlds {
 		ModelResourceLocation itemFromBlockModelRecourceLocation = new ModelResourceLocation(MODID +":" + blockName, "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemFromBlock, meta, itemFromBlockModelRecourceLocation);
 	}
+	
 }

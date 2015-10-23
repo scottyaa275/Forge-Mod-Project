@@ -67,12 +67,18 @@ public class MythicalAccessories {
 	//Dragons have a rare chance of spawning in the skies
 	//Or In Dragon Cave Generated Structures
 	//Demons in nether and rare as well all of them rare acutally
+	
 	/**Demonic Wings*/
 	public static Item demonWings;
 	/**Angelic Wings*/
 	public static Item angelWings;
 	/**Dragon Wings*/
 	public static Item dragonWings;
+	//Might need to change model for Dragon Wings
+	
+	/**Not acquirable through a mob
+	 * Also Uses a different Model*/
+	public static Item fairyWings;
 
 	/**Demon Horns*/
 	public static Item demonHorns;

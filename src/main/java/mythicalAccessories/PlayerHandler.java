@@ -29,7 +29,7 @@ public class PlayerHandler {
 		if (event.entity instanceof EntityPlayer)
 		{
 			EntityPlayer player = (EntityPlayer) event.entity;
-
+			
 		}
 	}
 
@@ -43,7 +43,7 @@ public class PlayerHandler {
 			{
 				player.capabilities.allowFlying = true;
 
-				if(player.motionY < 0.0f && !player.isSneaking())
+				if(player.motionY < 0.0f && !player.isSneaking() && !player.capabilities.isFlying)
 				{
 					player.motionY = -0.20f;
 				}

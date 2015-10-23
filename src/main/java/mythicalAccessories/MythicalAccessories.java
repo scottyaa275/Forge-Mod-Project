@@ -182,7 +182,6 @@ public class MythicalAccessories {
 	/**Registers the Player Event Handler*/
 	public void registerEventListeners() 
 	{
-		// DEBUG
 		System.out.println("Registering event listeners");
 
 		MinecraftForge.EVENT_BUS.register(new PlayerHandler());

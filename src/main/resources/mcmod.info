@@ -3,7 +3,7 @@
   "modid": "mythicalAccessories",
   "name": "Kreacher Features",
   "description": "A Mod that aims to add various usefull (wearable) things to Minecraft",
-  "version": "1.0.78",
+  "version": "1.0.80",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

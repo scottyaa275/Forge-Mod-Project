@@ -30,12 +30,9 @@ public class MythicalAccessories {
 	@SidedProxy(serverSide="mythicalAccessories.CommonProxy", clientSide="mythicalAccessories.client.ClientProxy")
 	public static CommonProxy proxy;
 	
-
 	public static final String NAME = "Kreacher Features";
 	public static final String MODID = "mythicalAccessories";
-	//Edit mcmod.info instead
 	public static final String VERSION = "1.8";
-	//USE MCMOD.INFO FOR VERSION
 
 	//For scarves use dyes to make it customizable I would suggest max amount of dyes is 4
 	//You add dyes in order of colors you want

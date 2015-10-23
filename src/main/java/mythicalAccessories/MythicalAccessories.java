@@ -27,7 +27,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = MythicalAccessories.MODID, version = MythicalAccessories.VERSION, name = MythicalAccessories.NAME)
 public class MythicalAccessories {
 	
-	@SidedProxy(serverSide="mythicalAccessories.CommonProxy", clientSide="mythicalAccessories.ClientProxy")
+	@SidedProxy(serverSide="mythicalAccessories.CommonProxy", clientSide="mythicalAccessories.client.ClientProxy")
 	public static CommonProxy proxy;
 	
 

@@ -23,7 +23,7 @@ public class NewWorlds {
 	public static final String VERSION = "1.8";
 	
 	public static Block leaves;
-	public static Block log;
+	public static Block betterLog;
 	
 	/**A better version of the normal grass block*/
 	public static Block betterGrass;
@@ -42,7 +42,9 @@ public class NewWorlds {
 		GameRegistry.registerBlock(betterDirt, "better_dirt");
 		blockRenderRegister(betterDirt, 0, "better_dirt");
 		
-		log = new BlockLogNew();
+		log = new BlockLogNew().setHardness(1.0f).setUnlocalizedName("better_log");
+		GameRegistry.registerBlock(betterLog, "better_logs");
+		blockRenderRegister(betterLog, 0, "better_logs");
 	}
 	
 	

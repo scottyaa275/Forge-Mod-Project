@@ -47,16 +47,11 @@ public class NewWorlds {
 		GameRegistry.registerBlock(betterDirt, "better_dirt");
 		blockRenderRegister(betterDirt, 0, "better_dirt");
 		
-<<<<<<< HEAD
-		log = new BlockLogNew().setHardness(1.0f).setUnlocalizedName("better_log");
-		GameRegistry.registerBlock(betterLog, "better_logs");
-		blockRenderRegister(betterLog, 0, "better_logs");
-=======
 		betterLog = new BlockLogNew().setHardness(1.0f).setUnlocalizedName("better_log");
 		GameRegistry.registerBlock(betterLog, "better_log");
 		blockRenderRegister(betterLog, 0, "better_log");
 		
->>>>>>> origin/master
+
 	}
 	
 	

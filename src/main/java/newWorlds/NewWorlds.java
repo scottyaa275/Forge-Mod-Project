@@ -50,10 +50,6 @@ public class NewWorlds {
 		betterLog = new BlockLogNew().setHardness(1.0f).setUnlocalizedName("better_log");
 		GameRegistry.registerBlock(betterLog, "better_log");
 		blockRenderRegister(betterLog, 0, "better_log");
-<<<<<<< HEAD
-=======
-		
->>>>>>> origin/master
 
 	}
 	

@@ -36,7 +36,6 @@ public class NewWorlds {
 	/**A better version of the normal dirt block*/
 	public static Block betterDirt;
 	
-	
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{

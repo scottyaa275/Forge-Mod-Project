@@ -2,6 +2,7 @@ package newWorlds;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockGrass;
+import net.minecraft.block.BlockLog;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -16,7 +17,6 @@ public class NewWorlds {
 	//The World A New
 	//That is the name btw :3
 	//I really hope we can make another mod file i DO NOT  want to go through that again ;~;
-
 	
 	public static final String NAME = "The World A New";
 	public static final String MODID = "newWorlds";
@@ -25,7 +25,10 @@ public class NewWorlds {
 	public static Block leaves;
 	public static Block log;
 	
+	/**A better version of the normal grass block*/
 	public static Block betterGrass;
+	/**A better version of the normal dirt block*/
+	public static Block betterDirt;
 	
 	
 	@EventHandler
@@ -33,7 +36,13 @@ public class NewWorlds {
 	{
 		betterGrass = new BlockBetterGrass().setHardness(1.0f).setUnlocalizedName("better_grass");
 		GameRegistry.registerBlock(betterGrass, "better_grass");
+		blockRenderRegister(betterGrass, 0, "better_grass");
 		
+		betterDirt = new BlockBetterGrass().setHardness(1.0f).setUnlocalizedName("better_dirt");
+		GameRegistry.registerBlock(betterDirt, "better_dirt");
+		blockRenderRegister(betterDirt, 0, "better_dirt");
+		
+		log = new BlockLogNew();
 	}
 	
 	

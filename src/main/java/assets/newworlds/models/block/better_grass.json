@@ -1,0 +1,10 @@
+{
+    "parent": "block/grass",
+    "textures": {
+        "particle": "newWorlds:blocks/better_grass_top",
+        "bottom": "newWorlds:blocks/better_dirt",
+        "top": "newWorlds:blocks/better_grass_top",
+        "side": "newWorlds:blocks/better_grass_side",
+        "overlay": "newWorlds:blocks/better_grass_side"
+    }
+}

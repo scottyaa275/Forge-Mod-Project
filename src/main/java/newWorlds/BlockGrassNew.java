@@ -7,10 +7,11 @@ import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockGrass;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
-public class BlockBetterGrass extends BlockGrass {
+public class BlockGrassNew extends BlockGrass {
 
 	//Sets the block below it
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
@@ -39,5 +40,15 @@ public class BlockBetterGrass extends BlockGrass {
                 }
             }
         }
+    }
+	
+	/**
+     * Get the Item that this Block should drop when harvested.
+     *  
+     * @param fortune the level of the Fortune enchantment on the player's tool
+     */
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return NewWorlds.betterDirt.getItemDropped(NewWorlds.betterDirt.getDefaultState().withProperty(BlockDirt.VARIANT, BlockDirt.DirtType.DIRT), rand, fortune);
     }
 }

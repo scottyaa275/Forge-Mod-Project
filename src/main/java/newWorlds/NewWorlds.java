@@ -40,11 +40,11 @@ public class NewWorlds {
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-		betterGrass = new BlockBetterGrass().setHardness(1.0f).setUnlocalizedName("better_grass");
-		GameRegistry.registerBlock(betterGrass, "newgrass");
+		betterGrass = new Block(Material.grass).setHardness(1.0f).setUnlocalizedName("better_grass");
+		GameRegistry.registerBlock(betterGrass, "better_grass");
 		blockRenderRegister(betterGrass, 0, "better_grass");
 		
-		betterDirt = new Block(Material.sand).setHardness(1.0f).setUnlocalizedName("better_dirt");
+		betterDirt = new Block(Material.ground).setHardness(1.0f).setUnlocalizedName("better_dirt");
 		GameRegistry.registerBlock(betterDirt, "better_dirt");
 		blockRenderRegister(betterDirt, 0, "better_dirt");
 		

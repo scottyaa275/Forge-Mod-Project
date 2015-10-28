@@ -8,7 +8,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import newWorlds.BlockBetterGrass;
 
 @Mod(modid = WarpCraft.MODID, version = WarpCraft.VERSION, name = WarpCraft.NAME)
 public class WarpCraft {

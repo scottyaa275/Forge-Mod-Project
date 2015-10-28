@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y,variant=oak":    { "model": "newworlds:gold_log" },
+        "axis=z,variant=oak":     { "model": "newworlds:gold_log_side" },
+        "axis=x,variant=oak":     { "model": "newworlds:gold_log_side", "y": 90 },
+        "axis=none,variant=oak":   { "model": "oak_bark" }
+    }
+}

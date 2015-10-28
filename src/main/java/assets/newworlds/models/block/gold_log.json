@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "newworlds:blocks/log_gold_top",
+        "side": "newworlds:blocks/log_gold"
+    }
+}

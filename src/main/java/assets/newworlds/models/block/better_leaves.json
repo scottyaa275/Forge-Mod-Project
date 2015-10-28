@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "newworlds:blocks/better_leaves"
+    }
+}

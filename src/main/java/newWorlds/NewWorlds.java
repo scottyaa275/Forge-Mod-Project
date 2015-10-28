@@ -52,7 +52,7 @@ public class NewWorlds {
 		GameRegistry.registerBlock(betterLog, "better_log");
 		blockRenderRegister(betterLog, 0, "better_log");
 		
-		TEST = new Block(Material.sand);
+		TEST = new Block(Material.sand).setUnlocalizedName("TEST_TILE");
 		GameRegistry.registerBlock(TEST, "TEST");
 		
 	}

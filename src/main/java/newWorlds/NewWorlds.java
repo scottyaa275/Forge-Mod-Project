@@ -3,6 +3,7 @@ package newWorlds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockGrass;
 import net.minecraft.block.BlockLog;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
@@ -24,11 +25,9 @@ public class NewWorlds {
 	public static final String VERSION = "1.8";
 	//1.0.010
 	
-
-	public static Block leaves;
-
+	/**A better version of the normal leaves block*/
 	public static Block betterLeaves;
-
+	/**A better version of the normal log block*/
 	public static Block betterLog;
 	
 	/**A better version of the normal grass block*/
@@ -36,11 +35,13 @@ public class NewWorlds {
 	/**A better version of the normal dirt block*/
 	public static Block betterDirt;
 	
+	public static Block TEST;
+	
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
 		betterGrass = new BlockBetterGrass().setHardness(1.0f).setUnlocalizedName("better_grass");
-		GameRegistry.registerBlock(betterGrass, "better_grass");
+		GameRegistry.registerBlock(betterGrass, "newgrass");
 		blockRenderRegister(betterGrass, 0, "better_grass");
 		
 		betterDirt = new BlockBetterGrass().setHardness(1.0f).setUnlocalizedName("better_dirt");
@@ -50,7 +51,10 @@ public class NewWorlds {
 		betterLog = new BlockLogNew().setHardness(1.0f).setUnlocalizedName("better_log");
 		GameRegistry.registerBlock(betterLog, "better_log");
 		blockRenderRegister(betterLog, 0, "better_log");
-
+		
+		TEST = new Block(Material.sand);
+		GameRegistry.registerBlock(TEST, "TEST");
+		
 	}
 	
 	

@@ -1,0 +1,40 @@
+{
+"textures": {
+    "side": "newworlds:blocks/grass_side",
+    "extra": "newworlds:blocks/grass_extra",
+    "top": "newworlds:blocks/grass_top",
+    "bottom": "newworlds:blocks/grass_top"
+},
+"elements": [ 
+{
+    "from": [ 0, 1.77636, 0 ],
+    "to": [ 16, 16, 16 ],
+    "faces": {
+        "down":  { "uv": [ 16, 16, 0, 0 ], "texture": "#bottom" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side" }
+    }
+},
+{
+    "from": [ 2.5, 16, 2.5 ],
+    "to": [ 2.5625, 18, 18.5 ],
+    "rotation": { "origin": [ 2.5, 16, 2.5 ], "axis": "y", "angle": 45 },
+    "faces": {
+        "west":  { "uv": [ 0, 0, 16, 0 ], "texture": "#extra" },
+        "east":  { "uv": [ 0, 14, 16, 16 ], "texture": "#extra" }
+    }
+},
+{
+    "from": [ 2.5, 16, 13.5 ],
+    "to": [ 18.5, 18, 13.5625 ],
+    "rotation": { "origin": [ 2.5, 16, 13.5 ], "axis": "y", "angle": 45 },
+    "faces": {
+        "north": { "uv": [ 0, 0, 16, 0 ], "texture": "#extra" },
+        "south": { "uv": [ 0, 14, 16, 16 ], "texture": "#extra" }
+    }
+}
+]
+}

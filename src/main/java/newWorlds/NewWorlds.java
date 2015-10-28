@@ -46,7 +46,7 @@ public class NewWorlds {
 		
 		betterDirt = new Block(Material.sand).setHardness(1.0f).setUnlocalizedName("better_dirt");
 		GameRegistry.registerBlock(betterDirt, "better_dirt");
-		blockRenderRegister(betterDirt, 0, "better_dirt");e
+		blockRenderRegister(betterDirt, 0, "better_dirt");
 		
 		betterLog = new BlockLogNew().setHardness(1.0f).setUnlocalizedName("better_log");
 		GameRegistry.registerBlock(betterLog, "better_log");

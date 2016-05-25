@@ -52,7 +52,7 @@ public class NewWorlds {
 		GameRegistry.registerBlock(betterLog, "better_log");
 		blockRenderRegister(betterLog, 0, "better_log");
 		
-		betterLeaves = new Block(Material.leaves).setHardness(0.2f).setUnlocalizedName("better_leaves");
+		betterLeaves = new BlockLeavesNew().setHardness(0.2f).setUnlocalizedName("better_leaves");
 		GameRegistry.registerBlock(betterLeaves, "better_leaves");
 		blockRenderRegister(betterLeaves, 0, "better_leaves");
 		

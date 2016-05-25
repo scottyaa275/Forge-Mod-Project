@@ -1,17 +1,9 @@
 package mythicalAccessories;
 
-import java.util.Random;
-
 import mythicalAccessories.item.ItemWings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockColored;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemDye;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.GuiScreenEvent.MouseInputEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
@@ -27,7 +19,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PlayerHandler {
 
-	//Handles all Player Events
+	//I HAVE FIGURED OUT EVENT HANDLERS
+	//POWWWAAARRRRR
+	//I HAVE POWER!!!!!!!!
+	//NOW ANY MOD CAN BE MADE >:D
 
 	@SubscribeEvent(priority=EventPriority.HIGH, receiveCanceled=false)
 	public void onEvent(LivingJumpEvent event)
@@ -35,7 +30,7 @@ public class PlayerHandler {
 		if (event.entity instanceof EntityPlayer)
 		{
 			EntityPlayer player = (EntityPlayer) event.entity;
-
+			
 		}
 	}
 
@@ -54,7 +49,7 @@ public class PlayerHandler {
 					player.motionY = -0.20f;
 				}
 
-				if(player.capabilities.isFlying && !player.capabilities.isCreativeMode)
+				if(player.capabilities.isFlying)
 				{
 					player.getCurrentArmor(2).damageItem(1, player);
 					if(player.getCurrentArmor(2).getItemDamage() <= 0)
@@ -66,11 +61,9 @@ public class PlayerHandler {
 		}
 		else if(!player.capabilities.isCreativeMode)
 		{
-			//player.capabilities.allowFlying = false;
-			//player.capabilities.isFlying = false;
+			player.capabilities.allowFlying = false;
+			player.capabilities.isFlying = false;
 		}
-
-		
 	}
 
 }

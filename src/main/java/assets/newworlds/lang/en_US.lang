@@ -1,6 +1,6 @@
 tile.better_grass.name=Grass
 tile.better_dirt.name=Dirt
 tile.better_log.name=Log
-tile.better_leaves.name=Leaves (THIS WILL BREAK YOUR WORLD, DO NOT PLACE)
-tile.moss.name=Moss 
+tile.better_leaves.name=Leaves
+tile.moss.name=Moss
 tile.TEST_TILE.name=§rTEST §kTEST
